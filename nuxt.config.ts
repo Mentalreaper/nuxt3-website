@@ -1,3 +1,6 @@
+import { defineNuxtConfig } from "nuxt/config";
+import svgLoader from "vite-svg-loader"
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     modules: [
@@ -14,7 +17,9 @@ export default defineNuxtConfig({
             ],
         },
     },
-    runtimeConfig: {
-        currencyKey: process.env.CURRENCY_API_KEY
+    vite: {
+        plugins: [
+            svgLoader(), // https://github.com/jpkleemans/vite-svg-loader#readme
+        ],
     },
 });

@@ -3,7 +3,15 @@
 @tailwind utilities;
 
 body {
-    @apply bg-gray-50;
+    @apply colour-003-bg;
+}
+
+h2 {
+    @apply mb-20 text-base;
+}
+
+p {
+    @apply my-20 mx-0;
 }
 
 @layer components {
@@ -13,5 +21,29 @@ body {
 
     .card {
         @apply p-3 rounded-md bg-white shadow-md h-full;
+    }
+
+    /* purple, light. Text */
+    .colour-001-text {
+        @apply text-[#DCCAE9];
+    }
+
+    /* purple, darker. Text, highlighted */
+    .colour-002-highlight {
+        @apply text-[#9356A0];
+    }
+
+    /* purple, darker. Text, highlighted */
+    .colour-003-bg {
+        @apply bg-[#0B0205];
+    }
+
+    /* purple, light. Text */
+    .colour-004-hover-text {
+        @apply hover:text-[white];
+    }
+
+    .router-link-exact-active {
+        @apply text-[#9356A0];
     }
 }

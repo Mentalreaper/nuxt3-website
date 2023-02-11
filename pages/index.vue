@@ -1,24 +1,24 @@
-<!-- Homepage -->
 <template>
-    <div>
-        <h2>Home</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptas
-            dignissimos itaque earum ad, debitis pariatur beatae fuga quam!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptas
-            dignissimos itaque earum ad, debitis pariatur beatae fuga quam!</p>
-    </div>
+    <carousel :slides="slides"></carousel>
 </template>
 
-<script setup>
+<script>
+    import Carousel from "~/components/carousel/carousel-container.vue"
 
+    export default {
+        name: "App",
+        components: { Carousel },
+        data: () => ({
+            slides: [
+                "https://picsum.photos/id/1032/900/400",
+                "https://picsum.photos/id/1033/900/400",
+                "https://picsum.photos/id/1037/900/400",
+                "https://picsum.photos/id/1035/900/400",
+                "https://picsum.photos/id/1036/900/400",
+            ],
+        }),
+    };
 </script>
 
-<style scoped>
-    h2 {
-        margin-bottom: 20px;
-        font-size: 36px;
-    }
-    p {
-        margin: 20px 0;
-    }
+<style>
 </style>
