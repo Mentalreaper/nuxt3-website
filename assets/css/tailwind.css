@@ -43,7 +43,5 @@ p {
         @apply hover:text-[white];
     }
 
-    .router-link-exact-active {
-        @apply text-[#9356A0];
-    }
+
 }

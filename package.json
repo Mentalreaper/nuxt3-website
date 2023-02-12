@@ -8,6 +8,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@nuxt/image-edge": "^1.0.0-27919678.2f5b64b",
     "@nuxtjs/svg": "^0.4.0",
     "@nuxtjs/tailwindcss": "^6.3.1",
     "@types/iframe-resizer": "^3.5.9",

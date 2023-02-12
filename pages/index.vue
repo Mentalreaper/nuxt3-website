@@ -1,24 +1,15 @@
 <template>
-    <carousel :slides="slides"></carousel>
+    <div>
+        <CarouselContainer :slides="slides" />
+    </div>
 </template>
 
-<script>
-    import Carousel from "~/components/carousel/carousel-container.vue"
-
-    export default {
-        name: "App",
-        components: { Carousel },
-        data: () => ({
-            slides: [
-                "https://picsum.photos/id/1032/900/400",
-                "https://picsum.photos/id/1033/900/400",
-                "https://picsum.photos/id/1037/900/400",
-                "https://picsum.photos/id/1035/900/400",
-                "https://picsum.photos/id/1036/900/400",
-            ],
-        }),
-    };
+<script setup>
+    const slides = [
+        '/images/image-01.jpg',
+        '/images/image-02.jpg',
+        '/images/image-03.jpg',
+        '/images/image-04.jpg',
+        '/images/image-05.jpg',
+    ];
 </script>
-
-<style>
-</style>

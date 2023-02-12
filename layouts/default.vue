@@ -40,3 +40,13 @@
         </footer>
     </div>
 </template>
+
+<style scoped>
+    .router-link-exact-active {
+        color: #ffffff;
+    }
+    .router-link-exact-active:hover {
+        color: #DCCAE9;
+    }
+
+</style>
